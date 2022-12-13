@@ -1,0 +1,145 @@
+body {
+    text-align: center;
+    background-color: #ADEFD1FF;
+}
+
+.popup {
+    font-size: 20px;
+    padding:25px;
+    visibility: hidden;
+    position: absolute;
+    top: 38%;
+    left: 42%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFFD2;
+}
+.popup1{
+    font-size: 20px;
+    visibility: hidden;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFFD2;
+}
+#input{
+    margin : 10px;
+    padding : 5px 0;
+}
+.btn2{
+    width: 150px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 20px 5px 5px 5px;
+    background-color: #00203FFF;
+    color: aliceblue;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: aliceblue;
+    color: #00203FFF;
+    border: solid #00203FFF;
+    cursor: pointer;
+}
+.btn-del{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.btn-del:hover{
+    cursor: pointer;
+}
+td:hover{
+    cursor: pointer;
+}
+
+.show {
+    font-size: 20px;
+    visibility: visible;
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFFD2;
+}
+
+.input-popup {
+    padding: 20px 20px 5px;
+}
+
+.endgame {
+    font-size: 20px;
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(81, 247, 108);
+}
+
+.endgame-show {
+    font-size: 20px;
+    visibility: visible;
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(81, 247, 108);
+}
+
+.result-popup {
+    padding: 20px 20px 5px;
+}
+
+.popcls {
+    padding: 0 10px;
+}
+
+.poptext {
+    /* margin-left: 34px; */
+    width: 100%;
+}
+
+.popbtn {
+    margin: 10px 5px 5px;
+}
+
+.correct-ans {
+    text-decoration: line-through;
+    color: blue;
+}
+
+.reveal-ans {
+    text-decoration: line-through;
+    color: red;
+}
+
+.endele {
+    text-align: center;
+    margin: 5px 15px;
+}
+
+.crossword-table {
+    margin: 0 auto;
+}
+
+.clue-table {
+    margin: 0 auto;
+}
+
+.cluetd {
+    text-align: left;
+}
+.cluetd:hover{
+    cursor: pointer;
+}
+.make_invisible{
+    visibility: hidden;
+}

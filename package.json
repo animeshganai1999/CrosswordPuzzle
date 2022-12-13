@@ -1,0 +1,16 @@
+{
+  "name": "Crossword Puzzle",
+  "version": "1.0.0",
+  "main": "/public/index.html",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.10.0"
+  },
+  "keywords": [],
+  "description": ""
+}

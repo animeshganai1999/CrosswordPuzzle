@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="./../stylesheets/admin-style.css">
+</head>
+
+<body>
+    <h1>Create Crossword Puzzle</h1>
+    <h3 style="text-align:center; color:red;"><b>(Click on the cell to make new entry)</b></h3>
+    <div id="rowcol">
+        <h3 style="display:inline">Enter size of the Crossword puzzle table : </h3>
+        <input type="number" min="1" max="20" id="numRow" placeholder="Enter number of rows" name="numRow">
+        <input type="number" min="1" max="20" id="numCol" placeholder="Enter number of columns" name="numCol">
+        <button onclick="createTable()">Create Table</button>
+    </div>
+    <div>
+        <div id="div1"></div>
+        <button id="save" class="hide btn2" onclick="saveThePuzzle()">Save the puzzle</button>
+        <button id="back" class="hide btn2" onclick="backToDelmonPage()">Back without saving</button>
+    </div>
+    <div class="popup" id="popup">
+        <div class="input-popup">
+            <div id="input">
+                <label for="direction">Enter the direction of the data : </label>
+                <input type="text" placeholder="a : Across, d : Down" id="direction">
+            </div>
+            <div id="input">
+                <label for="clue">Enter the clue : </label>
+                <input type="text" id="clue">
+            </div>
+            <div id="input">
+                <label for="data">Enter the Data : </label>
+                <input type="text" id="data">
+            </div>
+            <button onclick="insertElement()" class="popbtn">Verify and Add</button>
+            <button onclick="hidePopup()" class="popbtn">cancel</button>
+        </div>
+    </div>
+
+</body>
+<script src="./../jsfiles/admin-script.js"></script>
+
+</html>

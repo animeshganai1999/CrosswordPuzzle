@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="./../stylesheets/modify.css">
+</head>
+
+<body>
+    <div id="global_div">
+        <h1 style="margin : 20px;">Modify the Puzzle</h1>
+        <h4 style="color : red; margin : 5px"><b>(For deleting existing entry click on the corresponding clue entry)</b>
+        </h4>
+        <h4 style="color : red; margin : 5px 5px 15px 5px"> <b>(For create new entry click on the cell of the crossword
+                grid)</b>
+        </h4>
+        <div id="div1"></div>
+        <div class="popup1" id="popup1">
+            <div class="input-popup">
+                <div id="input">
+                    <label for="direction">Enter the direction of the data : </label>
+                    <input type="text" placeholder="a : Across, d : Down" id="direction">
+                </div>
+                <div id="input">
+                    <label for="clue">Enter the clue : </label>
+                    <input type="text" id="clue">
+                </div>
+                <div id="input">
+                    <label for="data">Enter the Data : </label>
+                    <input type="text" id="data">
+                </div>
+                <button onclick="insertElement()" class="popbtn">Verify and Add</button>
+                <button onclick="hidePopup()" class="popbtn">cancel</button>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="del-mod">
+                <button class="btn-del" onclick="deleteData()">Delete the data</button>
+                <button class="btn-del" onclick="hidePopupDel()">Cancel</button>
+            </div>
+        </div>
+
+        <div id="div2">
+            <h3 style="margin-bottom: 0;">Clues</h3>
+        </div>
+        <button class="btn2" onclick="SaveThePuzzle()">Save the Puzzle</button>
+    </div>
+</body>
+<script src="./../jsfiles/modify.js"></script>
+
+</html>

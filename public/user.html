@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="./../stylesheets/user-styles.css">
+</head>
+
+<body id="body">
+    <div id="global_div">
+        <h1 style="margin : 5px;">Crossword Puzzle</h1>
+        <h3 id="timer" style="margin : 5px;">Time : <span id="time"></span> seconds</h3>
+        <h4 style="color : red;margin : 10px;">You will get 100 seconds penalty of each reveled answer</h4>
+        <h4 style="color:green;margin : 15px;">Less the score, better player your are</h4>
+        <div id="div1"></div>
+
+        <div class="popup" id="popup">
+            <div class="input-popup">
+                <p id="clue" class="popcls"></p>
+                <p class="popcls">Enter your answer below</p>
+                <input type="text" class="poptext" id="answer" style="display: block;">
+                <button id="btn1" class="popbtn" onclick="matchAnswer()">OK</button>
+                <button id="btn4" class="popbtn" onclick="clearInput()">clear</button>
+                <button id="btn2" class="popbtn" onclick="revealAnswer()">Reveal Answer</button>
+                <button id="btn3" class="popbtn" onclick="hidePopup()">cancel</button>
+            </div>
+
+        </div>
+
+        <div class="endgame" id="endgame">
+            <div class="result-popup">
+                <p class="endele"><b>Your score is : <span id="score"></span></b></p>
+                <p class="endele">Number of answers you gave correct : <b><span id="numans"></span></b></p>
+                <p class="endele">Number of anser you revealed : <b><span id="revealans"></span></b></p>
+                <div style="text-align: center;">
+                    <button onclick="reloadPage()" class="endele">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="div2">
+            <h3 style="margin-bottom: 0;">Clues</h3>
+            <table id="tab2" class="clue-table">
+                <tr>
+                    <td style="text-align: center;">
+                        <h3>Across</h3>
+                    </td>
+                    <td style="text-align: center;">
+                        <h3>Down</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="./../jsfiles/user-script.js"></script>
+
+</html>
