@@ -3,7 +3,7 @@ wss.binaryType = "arraybuffer";
 var rowIndexPuzzle;
 var serverDataO;
 function buttonEvent(){
-    location.href = "./../public/index.html";
+    location.href = "/";
 }
 wss.addEventListener("message",(e) => {
     // alert(e.data);
@@ -31,7 +31,7 @@ wss.addEventListener("message",(e) => {
         bodyEleO.appendChild(btnO);
 
         btnO.onclick = function(){
-            location.href = "./../public/index.html";
+            location.href = "/";
         }
 
     }else{
@@ -65,7 +65,7 @@ wss.addEventListener("message",(e) => {
             data[0] = rowIndexPuzzle;
             console.log(data);
             wss.send(JSON.stringify(data)); // send data back to server
-            location.replace("./../public/user.html");
+            location.href = "/user";
             });
         });
     }

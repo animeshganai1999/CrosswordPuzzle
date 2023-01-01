@@ -21,7 +21,7 @@ function clearInput() {
     answer.value = "";
 }
 function reloadPage() {
-    location.href = "./../public/option.html";
+    location.href = "/option";
 }
 function endTheGame() { // if numOfAns is same as number of data in the puzzle
     if (numOfAns === database.length - 1) {

@@ -1,6 +1,19 @@
-const WebSocket = require("ws");
+const http = require('http')
+const express = require('express')
 
-const wss = new WebSocket.Server({port:8082});
+const app = express();
+const server = http.createServer(app)
+
+server.listen(8082, function () {
+    console.log('Server running')
+})
+
+const WebSocket = require('ws')
+const wss = new WebSocket.Server({server});
+
+var path = require('path');
+app.use(express.static(path.join(__dirname, 'jsfiles')));
+
 var jsonData = [
     0,
     [
@@ -74,6 +87,34 @@ var jsonData = [
       }
     ]
 ];
+
+app.get('/', function (req, res) {
+  res.sendFile(__dirname +'/public/index.html');
+})
+app.post('/login', function (req, res) {
+  res.sendFile(__dirname +'/public/login.html');
+})
+app.post('/option', function (req, res) {
+  res.sendFile(__dirname +'/public/option.html');
+})
+app.get('/option', function (req, res) {
+  res.sendFile(__dirname +'/public/option.html');
+})
+app.get('/adminDelmod', function (req, res) {
+  res.sendFile(__dirname +'/public/admin-delmod.html');
+})
+
+app.get('/admin', function (req, res) {
+  res.sendFile(__dirname +'/public/admin.html');
+})
+
+app.get('/modify', function (req, res) {
+  res.sendFile(__dirname +'/public/modify.html');
+})
+
+app.get('/user', function (req, res) {
+  res.sendFile(__dirname +'/public/user.html');
+})
 
 wss.on("connection", ws => {
     ws.on("message",message=>{

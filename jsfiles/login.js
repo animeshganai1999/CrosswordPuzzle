@@ -15,10 +15,10 @@ function verifyAndLogin(){
         alert("Password not Matched");
         crearField(uname,psw);
     }else{
-        location.href = "./../public/admin-delmod.html";
+        location.href = "/adminDelmod";
     }
 }
 
 function goToPrevPage(){
-    location.href = "./../public/index.html";
+    location.href = "/";
 }

@@ -32,7 +32,7 @@ function clearField(direction,clue,data){
 }
 
 function backToDelmonPage(){
-  location.href = "./../public/admin-delmod.html";
+  location.href = "/adminDelmod";
 }
 
 // display data on the table
@@ -184,5 +184,6 @@ function saveThePuzzle(){
   database.push(data);
   var jsonData = JSON.stringify(database);
   ws.send(jsonData);
-  location.replace("./../public/admin-delmod.html")
+  location.href = "/adminDelmod";
+  // location.replace("./../public/admin-delmod.html")
 }

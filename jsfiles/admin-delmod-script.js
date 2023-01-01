@@ -35,20 +35,20 @@ wss.addEventListener("message",(e) => {
                 data.splice(rowInd+1,1); // delete the specific row (puzzle)
                 // console.log(data);
                 wss.send(JSON.stringify(data)); // send data back to server
-                location.href = "./../public/admin-delmod.html";
+                location.href = "/adminDelmod";
             }else if(colInd === 2){ // modify the puzzle
                 data[0] = rowInd;
                 wss.send(JSON.stringify(data)); // send data back to server
-                location.href = "./../public/modify.html";
+                location.href = "/modify";
             }
         });
     });
     const btn1 = document.getElementById("btn1");
     btn1.addEventListener("click",(e)=>{
-        location.href = "./../public/admin.html";
+        location.href = "/admin";
     });
     const btn2 = document.getElementById("btn2");
     btn2.addEventListener("click",(e)=>{
-        location.href = "./../public/index.html";
+        location.href = "/";
     });
 });

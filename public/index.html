@@ -47,8 +47,13 @@
 <body>
     <h1>Welcome to the crossword puzzle</h1>
     <div class="center">
-        <button onclick="location.href = './login.html'">Create a Puzzle</button>
-        <button onclick="location.href = './option.html'">Play the Game</button>
+        <form action="/login" method="post" style="display:inline">
+            <button>Create a Puzzle</button>
+        </form>
+        <form action="/option" method="post" style="display:inline">
+            <button>Play the Game</button>
+        </form>
+
     </div>
 
 </body>

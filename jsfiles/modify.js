@@ -230,7 +230,7 @@ function SaveThePuzzle(){
         // modify will be inserted into the main data and send back to the server
         newdata[rowIndexPuzzle+1] = database;
         ws.send(JSON.stringify(newdata)); // send data back to server
-        location.href = "./../public/admin-delmod.html";
+        location.href = "/adminDelmod";
     }
 }
 

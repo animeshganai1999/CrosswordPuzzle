@@ -1,7 +1,7 @@
 {
   "name": "Crossword Puzzle",
   "version": "1.0.0",
-  "main": "/public/index.html",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
