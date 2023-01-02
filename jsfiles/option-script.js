@@ -1,4 +1,4 @@
-const serverAddress = "ws://localhost:8082";
+const serverAddress = "https://famous-wasp-mittens.cyclic.app/";
 const wss = new WebSocket(serverAddress);
 wss.binaryType = "arraybuffer";
 var rowIndexPuzzle;
