@@ -1,4 +1,5 @@
-const wss = new WebSocket("ws://localhost:8082");
+const serverAddress = process.env.PORT || 8082;
+const wss = new WebSocket(serverAddress);
 wss.binaryType = "arraybuffer";
 var rowIndexPuzzle;
 var serverDataO;
