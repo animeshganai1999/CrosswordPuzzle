@@ -3,8 +3,8 @@ const express = require('express')
 
 const app = express();
 const server = http.createServer(app)
-
-server.listen(8082, function () {
+const serverAddress = process.env.PORT || 8082;
+server.listen(serverAddress, function () {
     console.log('Server running')
 })
 
