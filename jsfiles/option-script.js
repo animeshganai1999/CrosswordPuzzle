@@ -1,4 +1,4 @@
-const serverAddress = 80;
+const serverAddress = "80";
 const wss = new WebSocket(serverAddress);
 wss.binaryType = "arraybuffer";
 var rowIndexPuzzle;
